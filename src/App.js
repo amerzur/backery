@@ -24,20 +24,7 @@ function App() {
         });
     }
   }
-  /*const animationRef = React.useRef(null);
-  React.useEffect(() => {
-    animationRef.current = anime({
-      targets: ".el",
-      translateX: 250,
-      delay: function(el, i) {
-        return i * 100;
-      },
-      loop: true,
-      direction: "alternate",
-      easing: "easeInOutSine"
-    });
-  }, []);
-  */
+ 
   let darkHTML = "";
 
   if (dark) {
@@ -45,7 +32,6 @@ function App() {
       <div>
         <div class="twinkling"></div> <div class="stars"></div>
         <div class="sleeping">
-         
           <span>z</span>
           <span>z</span>
           <span>z</span>
@@ -53,26 +39,22 @@ function App() {
       </div>
     );
   } else {
-    darkHTML = ""
+    darkHTML = "";
   }
   return (
     <Fragment>
       {darkHTML}
-      
+
       <div className={"App-header d-flex" + (dark ? "  night" : " day")}>
         <div className="frame d-flex flex-column">
-        <div class="weather">
-          {dark? "" :<div id="rays" class="rays"></div>}
-          <div
-            className={dark ? "moon" : "sun"}
-            onClick={() => toggleDarkMode(!dark)}
-          ></div>
+          <div class="weather">
+            {dark ? "" : <div id="rays" class="rays"></div>}
+            <div
+              className={dark ? "moon" : "sun"}
+              onClick={() => toggleDarkMode(!dark)}
+            ></div>
           </div>
 
-       
-           
-            
-                 
           <div id="triangle-up"></div>
           <div
             id="square"

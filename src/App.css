@@ -155,7 +155,6 @@
   bottom: 0;
 }
 
- 
 .clouds_one {
   background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
   position: absolute;
@@ -267,7 +266,7 @@ body #weather-animations .row {
   -o-border-radius: 50px;
   border-radius: 50px;
   position: absolute;
-   cursor: pointer;
+  cursor: pointer;
   z-index: 2;
   width: 100px;
   height: 100px;
@@ -282,8 +281,8 @@ body #weather-animations .row {
   cursor: pointer;
   z-index: 1;
   top: 35px;
-    left: 25px;
-    position: absolute;
+  left: 25px;
+  position: absolute;
 }
 .weather .cloud {
   -webkit-border-radius: 50px;
@@ -403,8 +402,6 @@ body #weather-animations .row .desc {
   top: 0px;
   left: 0px;
 }
-
- 
 
 #miniRays {
   width: 75px;
