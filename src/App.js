@@ -11,12 +11,12 @@ function App() {
 
   function doorClickedHanlder(e) {
     if (dark) {
-      alert("Oops ! sorry we are closed now !");
+      alert(" sorry we are closed now 💤!");
     } else {
       axios
         .post("/")
         .then(function(res) {
-          alert("order made!" + res.data.id);
+          alert("order made! \nresult in JSON :" + JSON.stringify(res.data));
         })
         .catch(function(error) {
           // handle error
