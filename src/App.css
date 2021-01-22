@@ -122,7 +122,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  transition: background 0.5s ease-out;
 }
 .el {
   height: 16px;
